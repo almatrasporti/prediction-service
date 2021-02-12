@@ -36,7 +36,7 @@ def predict_from_model(X_input, model, scaler):
 
 def get_scaled_input(raw_input, scaler):
     X_input = scaler.transform(np.array(raw_input).reshape(-1, 1))
-    X_input = np.reshape(X_input, (1, 30, 1))
+    X_input = np.reshape(X_input, (1, 12, 1))
 
     return X_input
 
